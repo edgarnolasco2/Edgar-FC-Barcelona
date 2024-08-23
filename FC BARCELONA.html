@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    body {
+            background-color: #A50044; 
+            color: #fff;
+        }
+        .navbar {
+            background-color: #004D98; 
+        }
+        .navbar-brand img {
+            height: 50px;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+        .player-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .footer {
+            background-color: #004D98;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style> 
+</body>
+</html>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="Escudo Barcelona.jfif" alt="FC Barcelona">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#jugadores">Jugadores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contáctanos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Camp Nou.jpg" class="d-block w-100" alt="Camp Nou">
+        </div>
+        <div class="carousel-item">
+            <img src="Entrenamiento.jfif" class="d-block w-100" alt="Entrenamiento">
+        </div>
+        <div class="carousel-item">
+            <img src="Entrevista Barcelona.jpg" class="d-block w-100" alt="Entrevista">
+        </div>
+        <div class="carousel-item">
+            <img src="Titulos.jpg" class="d-block w-100" alt="TItulos">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<section id="jugadores" class="container my-5">
+    <h2 class="text-center mb-4">Jugadores Blaugranas</h2>
+    <div class="row">
+        <div class="col-md-3 text-center">
+            <div class="player-card">
+                <img src="Messi Barcelona.jpg" alt="Lionel Messi">
+                <h4>Lionel Messi</h4>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="player-card">
+                <img src="Neymar Barcelona.jfif" alt="Neymar">
+                <h4>Neymar</h4>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="player-card">
+                <img src="Suarez Barcelona.jfif" alt="Luis Suárez">
+                <h4>Luis Suárez</h4>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="player-card">
+                <img src="Iniesta Barcelona.jfif" alt="Andrés Iniesta">
+                <h4>Andrés Iniesta</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contacto" class="container my-5">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <form>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <p>El Mejor Equipo de la Historia</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
